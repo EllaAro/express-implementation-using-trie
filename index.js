@@ -72,7 +72,7 @@ class ExpressTrie {
       }
     }
 
-    // we finished going through all the path, a handler will returned if we actually passed a whole valid path
+    // we finished going through all the path, the handler will executed if we actually passed a whole valid path
     return node.handler(requestParams);
   }
 }
