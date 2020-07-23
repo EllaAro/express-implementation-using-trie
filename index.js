@@ -55,7 +55,7 @@ class ExpressTrie {
         // if it exists, proceed to the next depth of the trie.
         node = node.children[path[i]];
       }
-      //check if its a special node
+      //else ,check if its a special node. This look-up can be avoided by keeping a reference to the special node in the parent node
       else if (
         Object.keys(node.children).filter(
           (key) => node.children[key].isSpecial === true
